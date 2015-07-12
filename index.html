@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Otium Taos</title>
+	<script src="otium.taos.presentation.js"></script>
+	<script>
+	function test()
+	{
+		var headerText = document.getElementById('t1');
+		var tb = document.getElementById('aa');
+		headerText.innerHTML = (0 + tb.value + 10);
+	}
+	</script>
+</head>
+<body>
+	<h1 id="t1">Otium Taos Project</h1>
+	<script>
+		var t = new TextBox('aa');
+		t.setText("Santi");
+		t.setOnChange("test()");
+		document.writeln(t.render());
+	</script>
+</body>
+</html>
